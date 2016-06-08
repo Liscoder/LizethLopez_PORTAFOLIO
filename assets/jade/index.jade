@@ -33,15 +33,15 @@ html(lang='es-PE')
 				.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
 					ul.nav.navbar-nav.navbar-right
 						li
-							a(href="#about") About
+							a(href="#about.html") About
 						li
-							a(href="#portafolio") Portafolio
+							a(href="#portafolio.html") Portafolio
 						li
-							a(href="#skills") Habilidades
+							a(href="#skills.html") Habilidades
 						li
-							a(href="#contacto") Contacto
+							a(href="#contacto.html") Contacto
 						li
-							a(href="#participacion") Participación
+							a(href="#participacion.html") Participación
 						
 		section(id="about" class="scrollto about text-center")
 			.protect
@@ -181,18 +181,40 @@ html(lang='es-PE')
 						h2.habil Skills
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/html5.png", alt="")
+							p(style="width:80%" data-value="89") HTML5
+								progress(max="100" value="89" class="html5 lenguajes")
+									.progress-bar
+										span(style="width:89%") 89%
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/css3.png", alt="")
+							p(style="width:80%" data-value="80") CSS3
+								progress(max="100" value="80" class="css3 lenguajes")
+									.progress-bar
+										span 80%
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/js.png", alt="")
+							p(style="width:30%" data-value="30") JQUERY
+								progress(max="100" value="30" class="jquery lenguajes")
+									.progress-bar
+										span 30%
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/wordpres.png", alt="")
+							p(style="width:40%" data-value="40") Wordpress
+								progress(max="100" value="40" class="wordpress lenguajes")
+									.progress-bar
+										span 40%	
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/sass.png",alt="")
+							p(style="width:80%" data-value="80") SASS
+								progress(max="100" value="80" class="sass lenguajes")
+									.progress-bar
+										span 80%	
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/jade.png",alt="")
-
-
+							p(style="width:89%" data-value="89") JADE
+								progress(max="100" value="89" class="jade lenguajes")
+									.progress-bar
+										span 80%	
 		section(id="contacto" class="scrollto contacto")
 			.protectcontacto
 				.container
