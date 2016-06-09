@@ -20,28 +20,27 @@ html(lang='es-PE')
 		section(id="header",class="header")
 			.container
 				header
-					nav.navbar.navbar-fixed-top
+					.navbar
 						.navbar-header
 							button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
 								span.sr-only toggle navigation
 								span.icon-bar
 								span.icon-bar
 								span.icon-bar
-						a.navbar-brand.titulo(href="#home")
-							img(src="assets/img/photo/logo_opt.png", alt="") 
-
-				.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-					ul.nav.navbar-nav.navbar-right
-						li
-							a(href="#about.html") About
-						li
-							a(href="#portafolio.html") Portafolio
-						li
-							a(href="#skills.html") Habilidades
-						li
-							a(href="#contacto.html") Contacto
-						li
-							a(href="#participacion.html") Participación
+							a(href="#home")
+								img(class="navbar-brand" src="assets/img/photo/logo_opt.png", alt="") 
+						.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+							ul.nav.navbar-nav.navbar-right
+								li.active
+									a(href="#about") About
+								li
+									a(href="#portafolio") Portafolio
+								li
+									a(href="#skills") Habilidades
+								li
+									a(href="#contacto") Contacto
+								li
+									a(href="#participacion") Participación
 						
 		section(id="about" class="scrollto about text-center")
 			.protect
@@ -75,31 +74,31 @@ html(lang='es-PE')
 
 							.proceso.col-md-8.col-sm-12
 								.learn.col-md-12.col-sm-12
-									p Conocer el problema
+									p <1> Conocer el problema
 									img(src="assets/img/icono/problem.jpg", class="icon",alt="magen de tener un problema")
 								.plan.col-md-3.col-sm-6
-									p Planear
+									p <2> Planear
 									img(src="assets/img/icono/lista.png", class="icon",alt="planes")
 								.brainstorm.col-md-3.col-sm-6
-									p Generar Ideas
+									p <3> Generar Ideas
 									img(src="assets/img/icono/ideas.png", alt="Generacion de ideas",class="icon")
 								.concepts.col-md-3.col-sm-6
-									p Esqueleto
+									p <4> Esqueleto
 									img(src="assets/img/icono/esqueleto.png", alt="Tener el esqueleto", class="icon")
 								.estructura.col-md-3.col-sm-6
-									p Estructura
+									p <5> Estructura
 									img(src="assets/img/icono/diagrama.png", alt="Tener la estructura",class="icon")
 								.revision.col-md-3.col-sm-6
-									p Revisar
+									p <6> Revisar
 									img(src="assets/img/icono/revisar.png", alt="Revisar lo desarrollado",class="icon")
 								.build.col-md-3.col-sm-6
-									p Construir
+									p <7> Construir
 									img(src="assets/img/icono/construir.png", alt="Construir tu web",class="icon")
 								.launch.col-md-3.col-sm-6
-									p Desplegar
+									p <8> Desplegar
 									img(src="assets/img/icono/desplegar.png", alt=" Desplegar tu web", class="icon")
 								.retroalimentacion.col-md-3.col-sm-6 
-									p Retroalimentar
+									p <9> Retroalimentar
 									img(src="assets/img/icono/feedback.png", alt="Hacer feedback",class="icon")
 									
 							h2.portafolio Portafolio
@@ -193,16 +192,16 @@ html(lang='es-PE')
 										span 80%
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/js.png", alt="")
-							p(style="width:30%" data-value="30") JQUERY
-								progress(max="100" value="30" class="jquery lenguajes")
+							p(style="width:50%" data-value="50") JQUERY
+								progress(max="100" value="50" class="jquery lenguajes")
 									.progress-bar
-										span 30%
+										span 50%
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/wordpres.png", alt="")
-							p(style="width:40%" data-value="40") Wordpress
-								progress(max="100" value="40" class="wordpress lenguajes")
+							p(style="width:60%" data-value="60") Wordpress
+								progress(max="100" value="60" class="wordpress lenguajes")
 									.progress-bar
-										span 40%	
+										span 60%	
 						.col-md-2.col-sm-4.col-xs-4
 							img(src="assets/img/coding/sass.png",alt="")
 							p(style="width:80%" data-value="80") SASS
@@ -220,7 +219,7 @@ html(lang='es-PE')
 				.container
 					.row
 						h2.contactame Contáctame
-						.col-md-1.col-md-offset-3.col-sm-4.col-xs-4
+						.col-md-1.col-md-offset-2.col-sm-4.col-xs-4
 							a(href="https://es.pinterest.com/lis_1222/")
 								img(src="assets/img/social/pinterest.png", alt="")
 						.col-md-1.col-sm-4.col-xs-4
@@ -248,13 +247,13 @@ html(lang='es-PE')
 						//- 		.col-md-8.col-md-offset-2
 						//- 			+textoarea("Mensaje")
 						//- 		.btn.enviar.col-md-4.col-md-offset-6 	ENVIAR
-		section(id="participacion" class="scrollto participacion")
+		section(id="participacion" class="scrollto participacion ")
 			.protectpart
 				.container
 					.row
 						h2.eventos Participaciones
 						.col-md-12.col-sm-12.col-xs-12
-							p ¡La tecnología en el mundo cambia y participar en eventos que tienen objetivos sociales es genial!
+							p.text-center ¡La tecnología en el mundo cambia y participar en eventos que tienen objetivos sociales es genial!
 						//- .col-md-6
 						//- 	.num000(href="http://www.techinsider.io/")
 						//- 		p TECH INSIDER
