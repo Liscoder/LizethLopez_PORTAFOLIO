@@ -1,0 +1,313 @@
+doctype html
+html(lang='es-PE')
+	head
+		meta(charset='UTF-8')
+		link(href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css')
+		link(rel='stylesheet', type='text/css', href='assets/css/font-awesome.min.css')
+		link(rel='stylesheet', type='text/css', href='assets/css/bootstrap.min.css')
+		link(href="assets/css/animate.min.css" rel="stylesheet" type="text/css")
+		link(rel="icon" href="assets/img/photo/lis.ico" type="image/x-icon")
+		title Lizeth Lopez Zamudio
+		link(rel='stylesheet', type='text/css', href='assets/css/main.css')
+	body
+		include helpers/mixinhome.jade
+		include commons/cabecera.jade
+		section(id="home",class="scrollto marca text-center tec")
+			.container
+				span.agente Agente de cambio con código y tecnologías exponenciales
+		section(id="header",class="header")
+			.container
+				header
+					.navbar
+						.navbar-header
+							button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+								span.sr-only toggle navigation
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a(href="#home")
+								img(class="navbar-brand" src="assets/img/photo/logo_opt.png", alt="") 
+						.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+							ul.nav.navbar-nav.navbar-right
+								li.active
+									a(href="#about") About
+								li
+									a(href="#portafolio") Portafolio
+								li
+									a(href="#skills") Habilidades
+								li
+									a(href="#contacto") Contacto
+								li
+									a(href="#participacion") Participación
+						
+		section(id="about" class="scrollto about text-center")
+			.protect
+				.container
+					.row
+						.h2
+						.col-md-8.col-sm-6
+							.presentation
+								p Hola, gracias por visitar mi portafolio. Mi nombre es
+								h1 LIZETH LOPEZ
+								p soy Front-end Developer Junior y estudiante del 9no ciclo de Ingeniería Industrial, apasianada por la tecnología buscando con cada línea de código
+
+							p(class="tagline") 
+								span(class="change-container")
+								span(class="changing") Crear
+								span(class="changing") Transformar
+								span(class="changing") Plasmar
+								span(class="changing") Innovar
+						.col-md-4.doll.col-sm-6
+							img(src="assets/img/photo/LIZDOLL1.png", alt="")
+		section(id="portafolio" class="scrollto portafolio")
+			.trabajo
+				.protectport
+					.container
+						.row
+							h2.port Proceso
+							.col-md-4.acotar.col-sm-12
+								
+								span Evidencias de aplicar lo aprendido
+								p Desarrollados en clase con herramientas como SASS, JADE, Bootstrap, JavaScript, Jquery.
+
+							.proceso.col-md-8.col-sm-12
+								.learn.col-md-12.col-sm-12
+									p <1> Conocer el problema
+									img(src="assets/img/icono/problem.jpg", class="icon",alt="magen de tener un problema")
+								.plan.col-md-3.col-sm-6
+									p <2> Planear
+									img(src="assets/img/icono/lista.png", class="icon",alt="planes")
+								.brainstorm.col-md-3.col-sm-6
+									p <3> Generar Ideas
+									img(src="assets/img/icono/ideas.png", alt="Generacion de ideas",class="icon")
+								.concepts.col-md-3.col-sm-6
+									p <4> Esqueleto
+									img(src="assets/img/icono/esqueleto.png", alt="Tener el esqueleto", class="icon")
+								.estructura.col-md-3.col-sm-6
+									p <5> Estructura
+									img(src="assets/img/icono/diagrama.png", alt="Tener la estructura",class="icon")
+								.revision.col-md-3.col-sm-6
+									p <6> Revisar
+									img(src="assets/img/icono/revisar.png", alt="Revisar lo desarrollado",class="icon")
+								.build.col-md-3.col-sm-6
+									p <7> Construir
+									img(src="assets/img/icono/construir.png", alt="Construir tu web",class="icon")
+								.launch.col-md-3.col-sm-6
+									p <8> Desplegar
+									img(src="assets/img/icono/desplegar.png", alt=" Desplegar tu web", class="icon")
+								.retroalimentacion.col-md-3.col-sm-6 
+									p <9> Retroalimentar
+									img(src="assets/img/icono/feedback.png", alt="Hacer feedback",class="icon")
+									
+							h2.portafolio Portafolio
+							.col-md-12.col-sm-12
+								.col-md-4.col-sm-6.col-xs-12
+									.port1
+										.work.work1
+										span Agency Team
+										.info
+											.git
+												a(href="http://liscoder.github.io/agencyteam")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p SASS + JADE
+								.col-md-4.col-sm-6.col-xs-12
+									.port1
+										.work.work2
+										span Kane
+										.info
+											.git
+												a(href="http://liscoder.github.io/kane")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p JADE + SASS
+								.col-md-4.col-sm-6.col-xs-12
+									.port1
+										.work.work3
+										span Loveblog
+										.info
+											.git
+												a(href="http://liscoder.github.io/loveblog")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p BOOTSTRAP + JADE + JS
+								.col-md-4.col-sm-6.col-xs-12
+									.port1
+										.work.work4
+										span Sazon Día
+										.info
+											.git
+												a(href="https://sazondeldia-liscoder.c9users.io/index.html")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p CSS + HTML + CREATIVIDAD
+								.col-md-4.col-sm-6.col-xs-12
+									.port1
+										.work.work5
+										span  TelexSpace
+										.info
+											.git
+												a(href="http://liscoder.github.io/TelxSpace")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p CSS + HTML + DATA(NASA)
+								.col-md-2.col-sm-3
+									.port1
+										.work.work6
+										span To Do App
+										.info
+											.git
+												a(href="http://liscoder.github.io/ToDoApp")
+													img(src="assets/img/photo/git.png", alt="")
+											.tec
+												p JS + HTML + CSS
+								.col-md-2.col-sm-3
+									.port1
+										.work7
+										span Mascota virtual
+										.info
+											.git
+												a(href="https://hackaton-amazonia-liscoder.c9users.io/index.html")
+													img(src="assets/img/photo/git.png", alt="")
+												p HTML + CSS + DATA(AMAZONÍA)
+	
+		section(id="skills" class="scrollto skills")
+			.protecskills
+				.container
+					.row
+						h2.habil Skills
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/html5.png", alt="")
+							p(style="width:80%" data-value="89") HTML5
+								progress(max="100" value="89" class="html5 lenguajes")
+									.progress-bar
+										span(style="width:89%") 89%
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/css3.png", alt="")
+							p(style="width:80%" data-value="80") CSS3
+								progress(max="100" value="80" class="css3 lenguajes")
+									.progress-bar
+										span 80%
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/js.png", alt="")
+							p(style="width:50%" data-value="50") JQUERY
+								progress(max="100" value="50" class="jquery lenguajes")
+									.progress-bar
+										span 50%
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/wordpres.png", alt="")
+							p(style="width:60%" data-value="60") Wordpress
+								progress(max="100" value="60" class="wordpress lenguajes")
+									.progress-bar
+										span 60%	
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/sass.png",alt="")
+							p(style="width:80%" data-value="80") SASS
+								progress(max="100" value="80" class="sass lenguajes")
+									.progress-bar
+										span 80%	
+						.col-md-2.col-sm-4.col-xs-4
+							img(src="assets/img/coding/jade.png",alt="")
+							p(style="width:89%" data-value="89") JADE
+								progress(max="100" value="89" class="jade lenguajes")
+									.progress-bar
+										span 80%	
+		section(id="contacto" class="scrollto contacto")
+			.protectcontacto
+				.container
+					.row
+						h2.contactame Contáctame
+						.col-md-1.col-md-offset-2.col-sm-4.col-xs-4
+							a(href="https://es.pinterest.com/lis_1222/")
+								img(src="assets/img/social/pinterest.png", alt="")
+						.col-md-1.col-sm-4.col-xs-4
+							a(href="https://pe.linkedin.com/in/lizeth-kendy-lopez-zamudio-a34825a2")
+								img(src="assets/img/social/linkedin.png", alt="")
+						.col-md-1.col-sm-4.col-xs-4
+							a(href="https://plus.google.com/u/0/117464753284909746107")
+								img(src="assets/img/social/google-plus.png", alt="")
+						.col-md-1.col-sm-4.col-xs-4
+							a(href="https://twitter.com/lklz135?lang=es")
+								img(src="assets/img/social/gorjeo.png", alt="")
+						.col-md-1.col-sm-4.col-xs-4
+							a(href="https://www.instagram.com/lizethkl/")
+								img(src="assets/img/social/instagram.png", alt="")
+						.col-md-1.col-sm-4.col-xs-4
+							a(href="https://github.com/Liscoder")
+								img(src="assets/img/social/cat.png", alt="")
+
+						//- .col-md-6.text-center
+						//- 	.formulario
+						//- 		.col-md-8.col-md-offset-2
+						//- 			+input("Nombres completos")
+						//- 			+input("Correo electrónico")
+						//- 			+input("Teléfonos")
+						//- 		.col-md-8.col-md-offset-2
+						//- 			+textoarea("Mensaje")
+						//- 		.btn.enviar.col-md-4.col-md-offset-6 	ENVIAR
+		section(id="participacion" class="scrollto participacion ")
+			.protectpart
+				.container
+					.row
+						h2.eventos Participaciones
+						.col-md-12.col-sm-12.col-xs-12
+							p.text-center ¡La tecnología en el mundo cambia y participar en eventos que tienen objetivos sociales es genial!
+						//- .col-md-6
+						//- 	.num000(href="http://www.techinsider.io/")
+						//- 		p TECH INSIDER
+						//- 	.num00(href="http://www.theverge.com/tech")
+						//- 		p THE VERGE
+						//- 	.num0(href="https://angel.co")
+						//- 		p ANGEL
+						//- 	.num1(href="http://techmeme.com/")
+						//- 		p TECH MEME
+						//- 	.num2(href="http://techcrunch.com/")
+						//- 		p TECH CRUNCH
+						//- 	.num3(href="http://www.startup365.fr/herramientas-emprendedores/")
+						//- 		p STARTUP 365
+						//- .col-md-6
+						//- 	.num4(href="https://slashdot.org/")
+						//- 		p SLASHDOT
+						//- 	.num5(href="http://thenextweb.com/")
+						//- 		p THE NEXT WEB
+						//- 	.num6(href="https://www.kickstarter.com/")
+						//- 		p KICKSTARTER
+						//- 	.num7(href="https://www.theguardian.com/uk/technology")
+						//- 		p THE GUARDIAN 
+						//- 	.num8(href="https://entrepreneurs.maqtoob.com/35-free-resources-to-grow-your-business-or-blog-d3f1ec283b92#.yyn330ecj")
+						//- 		P FREE RESOURCES TO GROW YOUR BUSINESS OR BLOG 
+						//- 	//- .num9(href="http://www.zenpen.io/")
+						//- 	.num10(href="http://www.wired.com/category/design/")
+						//- 		p DESIGN
+						.col-md-12.col-sm-12.col-xs-12
+							.galeria
+								div(id='carrusel' class='carousel slide' data-ride="carousel")
+									ol.carousel-indicators
+										li(data-target='#carrusel' data-slide-to='0' class='active')
+										li(data-target='#carrusel' data-slide-to='1')
+										li(data-target='#carrusel' data-slide-to='2')
+									.carousel-inner
+										.item.active.text-center
+											img(alt='' src='assets/img/participaciones/img1.jpg')
+											.caption
+											span Hackaton Amazonía
+											<a class="carousel-control left" href="#carrusel"  data-slide="prev">&lsaquo;</a>
+											<a class="carousel-control right" href="#carrusel" data-slide="next">&rsaquo;</a>
+										.item
+											img(alt='' src='assets/img/participaciones/img2.png')
+											.caption
+											span Nasa Space App Challenge
+											<a class="carousel-control left" href="#carrusel"  data-slide="prev">&lsaquo;</a>
+											<a class="carousel-control right" href="#carrusel" data-slide="next">&rsaquo;</a>
+										.item
+											img(alt='' src='assets/img/participaciones/img2.jpg')
+											.caption
+											span Startup weekend: Industrias Creativas
+											<a class="carousel-control left" href="#carrusel"  data-slide="prev">&lsaquo;</a>
+											<a class="carousel-control right" href="#carrusel" data-slide="next">&rsaquo;</a>
+		include commons/footer.jade
+		script(src="http://code.jquery.com/jquery-1.10.2.min.js")
+		script(type='text/javascript', src='assets/js/bootstrap.min.js')
+		script(type='text/javascript', src='assets/js/main.js')

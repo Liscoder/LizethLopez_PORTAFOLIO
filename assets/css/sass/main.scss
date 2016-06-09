@@ -18,7 +18,6 @@ h1,h2,h3,h4,h5,h6{
   width:300px;
 }
 .navbar-toggle{
-  margin-top:120px;
   background-color:#FF9D2E;
   border:4px solid #FF9D2E;
   span{
@@ -30,7 +29,9 @@ h1,h2,h3,h4,h5,h6{
   font-size:16px;
 
 }}
-
+.navbar-collapse{
+  background-color:white;
+}
 
 .nav>li>a:hover, .nav>li>a:focus {
     text-decoration: none;
@@ -290,8 +291,8 @@ background:url("../img/photo/skills.jpg") no-repeat center;
 background-size:cover;
 width:100%;
 height:400px;
-.protectskills{
-  background:rgba(0,0,0,0.93);
+.protecskills{
+  background:rgba(0,0,0,0.6);
   width:100%;
   height:400px;
 }
@@ -318,7 +319,7 @@ width:100%;
 height:300px;
 }
 .doll{
- margin: 100px 0;
+ margin: 50px 0;
   img{
      height: 400px;
      
@@ -426,11 +427,10 @@ div.galeria {
 $width-ultraextrasmall: "screen and (max-width: 479px)";
 $width-extrasmall: "screen and (min-width: 480px) and (max-width: 639px)";
 $width-small: "screen and (min-width: 640px) and (max-width: 714px)";
-
+$width-peque:"screen and (min-width:360px) and (max-width:479)";
+$width-mini:"screen and (min-width:300px) and (max-width:360)";
 @media #{$width-small}{
-    .header{
-        height:100px;
-  }
+  
     .navbar-toogle{
       margin-top:80px;
     }
@@ -443,11 +443,11 @@ $width-small: "screen and (min-width: 640px) and (max-width: 714px)";
   .portafolio{
   .trabajo{
 
-  height:4300px;
+  height:4400px;
 
   .protectport{
 
-    height:4300px;
+    height:4400px;
     .icon{
         margin-left:48%;
     }
@@ -463,10 +463,13 @@ $width-small: "screen and (min-width: 640px) and (max-width: 714px)";
   
 .skills{
 
-height:570px;
-.protectskills{
+height:600px;
+.protecskills{
 
-  height:570px;
+  height:600px;
+  img{
+    height:100px;
+  }
 }
 }
   .contacto{
@@ -492,11 +495,11 @@ height:570px;
   .portafolio{
   .trabajo{
 
-  height:4100px;
+  height:4200px;
 
   .protectport{
 
-    height:4100px;
+    height:4200px;
     .icon{
         margin-left:48%;
     }
@@ -512,10 +515,13 @@ height:570px;
   
 .skills{
 
-height:600px;
-.protectskills{
+height:700px;
+.protecskills{
 
-  height:600px;
+  height:700px;
+  img{
+    height:100px;
+  }
 }
 }
   .contacto{
@@ -524,6 +530,9 @@ height:600px;
     }
   }
 
+}
+.eventos{
+  color:#5E4352;
 }
 @media #{$width-ultraextrasmall}{
   .header{
@@ -541,11 +550,11 @@ height:600px;
   .portafolio{
   .trabajo{
 
-  height:4300px;
+  height:4400px;
 
   .protectport{
 
-    height:4300px;
+    height:4400px;
     .icon{
         margin-left:46%;
     }
@@ -561,12 +570,12 @@ height:600px;
   
 .skills{
 
-height:570px;
-.protectskills{
+height:600px;
+.protecskills{
 
-  height:570px;
+  height:600px;
   img{
-    height:300px;
+    height:100px;
   }
 }
 }
@@ -577,4 +586,112 @@ height:570px;
   }
 
 }
+
+@media #{$width-peque}{
+  .header{
+        height:100px;
+  }
+    .navbar-toogle{
+      margin-top:80px;
+    }
+  .about{
+        height:1000px;
+    .protect{
+      height:1000px;
+    }
+}
+  .portafolio{
+  .trabajo{
+
+  height:4200px;
+
+  .protectport{
+
+    height:4200px;
+    .icon{
+        margin-left:46%;
+    }
+    .learn{
+      img{
+         margin-left:48%;
+      }
+     
+    }
+  }
+}
+  }
+  
+.skills{
+
+height:800px;
+.protecskills{
+
+  height:800px;
+  img{
+    height:40px;
+  }
+}
+}
+  .contacto{
+    div{
+      padding:5px 0;
+    }
+  }
+
+}
+
+@media #{$width-mini}{
+  .header{
+        height:100px;
+  }
+    .navbar-toogle{
+      margin-top:80px;
+    }
+  .about{
+        height:1000px;
+    .protect{
+      height:1000px;
+    }
+}
+  .portafolio{
+  .trabajo{
+
+  height:4400px;
+
+  .protectport{
+
+    height:4400px;
+    .icon{
+        margin-left:46%;
+    }
+    .learn{
+      img{
+         margin-left:48%;
+      }
+     
+    }
+  }
+}
+  }
+  
+.skills{
+
+height:800px;
+.protecskills{
+
+  height:800px;
+  img{
+    height:40px;
+  }
+}
+}
+  .contacto{
+    div{
+      padding:5px 0;
+    }
+  }
+
+}
+
+
 
