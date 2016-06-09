@@ -140,6 +140,9 @@ nav {
 .navbar-brand img {
   margin-top: 25px; }
 
+.navbar {
+  margin-bottom: 0; }
+
 /*portafolio*/
 .port {
   color: #EB0A44; }
@@ -513,5 +516,7 @@ div.galeria {
 
   .contacto div {
     padding: 5px 0; } }
+.resume img {
+  margin-top: 50px 0; }
 
 /*# sourceMappingURL=main.css.map */
